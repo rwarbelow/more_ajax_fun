@@ -1,4 +1,4 @@
-<div class="post-form inner-box" >
+<div class="post-form_<%= @post.id %> inner-box" >
 	<%= form_for @post, remote: true do |f| %>
 		<%= f.text_field :title, class: 'form-title' %> <br />
 		<%= f.text_field :description, class: 'form-description' %>
