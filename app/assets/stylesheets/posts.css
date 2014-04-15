@@ -1,0 +1,21 @@
+.box {
+	margin: 20px 0px;
+	width: 650px;
+	padding: 10px;
+}
+
+.inner-box {
+	background-color: #2ecc71;
+	padding: 5px 20px;
+	height: 100px;
+}
+
+.form-title {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.form-description {
+	width: 80%;
+	height: 50px;
+}
