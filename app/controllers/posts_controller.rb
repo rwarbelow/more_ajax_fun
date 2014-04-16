@@ -13,6 +13,7 @@ class PostsController < ApplicationController
 
 	def destroy
 		@post.destroy
+		Post.create(title: "A new post!", description: "A little description.")
 	end
 
 	def edit
