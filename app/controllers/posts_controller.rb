@@ -4,7 +4,7 @@ class PostsController < ApplicationController
 	respond_to :html, :js
 
 	def index
-		@posts = Post.all
+		@posts = Post.all.sort { |a, b| a.id <=> b.id }
 	end
 
 	def update
