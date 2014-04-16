@@ -1,2 +1,2 @@
 $("#edit_post_<%= @post.id %>").hide();
-$(".post_<%= @post.id %>").replaceWith("<%= j render 'form' %>");
+$(".post_<%= @post.id %>").parent().replaceWith("<%= j render 'form' %>");
