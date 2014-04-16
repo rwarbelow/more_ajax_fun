@@ -1,4 +1,9 @@
-<div class="post_<%= post.id %> inner-box">
+<div class="box">
+
+	<div class="post_<%= post.id %> inner-box">
 		<h3><%= post.title %></h3>
 		<p><%= post.description %></p>
 	</div>
+	<%= link_to "Edit", edit_post_path(post), id: "edit_post_#{post.id}", class: "edit_post", remote: true %>
+	<%= link_to "Delete", post_path(post), method: "delete", remote: true, class: "delete_post", id: "delete_post_#{post.id}" %>
+</div>
